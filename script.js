@@ -5,7 +5,7 @@ const loadMore = document.getElementById("load-more-movies-btn")
 const closeBtn = document.getElementById("close-search-btn")
 
 // Global Constants
-const apiKey = "043181aa1e5530f8f4aaf3056a66ce9e"
+const apiKey = ""
 let pages = 0
 let search = false // both search and now playing helps to call the appropriate functions when loading more movies and searching
 let nowPlaying = true
