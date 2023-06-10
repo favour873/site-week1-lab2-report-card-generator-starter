@@ -21,14 +21,14 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
   - The button should have an id of `load-more-movies-btn`.
   - When clicked, the page should not refresh.
   - New movies should simply be added to the bottom
-- [ ] Allow users to search for movies and display them in a grid view
+- [x] Allow users to search for movies and display them in a grid view
   - There should be a search input element with an id of `search-input`
   - Users should be able to type into the input
   - When a user hits 'Enter', it should send a search request to the movies API
   - The results from the search should be displayed on the page
   - There should be a close icon with an id of `close-search-btn` that exits the search, clears results, and shows the current movies displayed previously
-- [ ] Website accounts for basic HTML/CSS accessibility features
-- [ ] Website should be responsive
+- [x] Website accounts for basic HTML/CSS accessibility features
+- [x] Website should be responsive
 
 #### Stretch Features
 
@@ -40,23 +40,22 @@ Deployed Application (optional): [Flixster Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
-
 `ADD_EMBEDDED_CODE_HERE`
+https://drive.google.com/file/d/1rfuWtGB7BE1A81PiQUg_qrnzLADmG_HI/view?usp=sharing
 
 ### Reflection
 
 - Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+To an extent they did but I felt there was a disconnect since we had a bit of starter code for the lab but had to start from scratch on the assignment.
 
 - If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+I would have implemented stretch features and added a few more accessibility features and extra styling too.
 
 - Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+I saw that someone thought of creating a bact to top button which I know isn't too difficult to implement and would definitely be useful after clicking the load more button a few times.
 
 ### Open-source libraries used
 
@@ -65,3 +64,5 @@ Add your response here
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+Special thanks to Gerardo, Ethan, Gustavo, Brian and Joselyne.

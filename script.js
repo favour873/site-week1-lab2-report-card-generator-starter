@@ -1,3 +1,4 @@
+//  querying needed elements
 const searchFormEl = document.getElementById("search-form")
 const movieBox = document.getElementById("movies-grid")
 const loadMore = document.getElementById("load-more-movies-btn")
@@ -6,11 +7,11 @@ const closeBtn = document.getElementById("close-search-btn")
 // Global Constants
 const apiKey = "043181aa1e5530f8f4aaf3056a66ce9e"
 let pages = 0
-let search = false
+let search = false // both search and now playing helps to call the appropriate functions when loading more movies and searching
 let nowPlaying = true
 let inputString = ""
 
-
+// creates a div container for a movie with the title, image and rating elements
 const createMovie = (movieObj) => {
     const currMovie = document.createElement("div")
     currMovie.setAttribute('class', "movie-card")
@@ -23,6 +24,7 @@ const createMovie = (movieObj) => {
     movieBox.appendChild(currMovie)
 }
 
+// uses the api to retieve the first 20 trending movies
 const fetchMovies = async () => {
     pages += 1
     const movieBaseURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&page=${pages}`
@@ -36,6 +38,7 @@ const fetchMovies = async () => {
     }
 }
 
+// allows users to search for movies based on the title of the movie
 const searchfn = async (string) => {
     pages += 1
     movieBox.innerHTML = ""
@@ -50,6 +53,7 @@ const searchfn = async (string) => {
 
 }
 
+// this function resets the screen to the original page of the first 20 movies after a search 
 const close = () => {
     pages = 0
     movieBox.innerHTML = ""
@@ -59,7 +63,7 @@ const close = () => {
 
 }
 
-//updating page
+// at the click of the load more button, this gets more movies from the api ina regular case and a after a search 
 loadMore.addEventListener("click", (event) => {
     if (search) {
         searchfn(inputString)
@@ -69,6 +73,7 @@ loadMore.addEventListener("click", (event) => {
     
 })
 
+// calls the search function when the user presses enter in the search field
 searchFormEl.addEventListener("submit", (event) => {
     pages = 0
     search = true
@@ -78,8 +83,10 @@ searchFormEl.addEventListener("submit", (event) => {
     searchfn(inputString)
 })
 
+// calls the close function when the close button is pressed
 closeBtn.addEventListener("click", close)
 
+// when the window loads, movies are fetched from the api
 window.onload = () => {
     fetchMovies()
 }
