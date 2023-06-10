@@ -1,0 +1,70 @@
+/*============ GOOOGLE FONTS ================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    background: #554868;  }
+
+h1{
+    color: #c6c0cf;
+    text-align: center;
+    font-weight: 900;
+    font-size: 300%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+h4 {
+  inline-size: 200px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+#search-container {
+    text-align: center;
+    color: #c6c0cf;
+  }
+
+#search-input {
+    height: 20px;
+    width: 200px;
+}
+
+#close-search-btn {
+    background-color: #d2c1fe;
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+#movies-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin: 10px;
+}
+
+.movie-card {
+  padding: 10px 10px 10px 10px;;
+}
+
+#button-container{
+  text-align: center;
+}
+
+
